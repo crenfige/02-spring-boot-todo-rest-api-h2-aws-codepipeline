@@ -12,7 +12,6 @@ phases:
   build:
     commands:
       - mvn clean package
-	  - echo $CODEBUILD_SRC_DIR
       - echo build
   post_build:
     commands:
@@ -20,4 +19,3 @@ phases:
 artifacts:
   files:
     - '**/'
-  discard-paths:yes
